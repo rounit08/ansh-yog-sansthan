@@ -10,7 +10,7 @@ import ErrorPage from './ERROR.jsx'
 import Introduction from './pages/Introduction/Introduction.jsx'
 import NagarPalikaParishad from './pages/NagarPalikaParishad/NagarPalikaParishad.jsx'
 import AnnapurnaRasoi from './pages/AnnapurnaRasoi/AnnapurnaRasoi.jsx'
-import Gaushala from './pages/gaushala/Gaushala.jsx'
+import Gaushala from './pages/Gaushala/Gaushala.jsx'
 import Gola from './pages/Gola/Gola.jsx'
 
 const router = createBrowserRouter([
