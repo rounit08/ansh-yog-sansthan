@@ -1,0 +1,18 @@
+.gallery::-webkit-scrollbar {
+  width: 5px;
+}
+
+.gallery::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+  border-radius: 0px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background-color: #ff7e54;
+  border-radius: 10px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+  cursor: pointer;
+}

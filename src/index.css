@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-container {
+    max-width: 1440px;
+    padding-inline: clamp(16px, 4vw, 48px);
+    margin-inline: auto;
+}
