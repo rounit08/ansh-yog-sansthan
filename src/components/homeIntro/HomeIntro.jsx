@@ -3,10 +3,10 @@ import linkArrow from "../../../public/images/rightArrow.png"
 const HomeIntro = () => {
   return (
     <div className="custom-container flex flex-col-reverse md:flex-row items-center  gap-20 p-20">
-      <div className="w-1/3">
+      <div className="md:w-1/3">
         <img src={heroImage} alt="image" className="rounded-full" />
       </div>
-      <div className="w-2/3 text-xl md:text-2xl">
+      <div className="md:w-2/3 text-xl md:text-2xl">
         <span className="text-baseColor">
           <strong>विजय कुमार शुक्ल &apos;रिंकू&apos; (एडवोकेट)</strong>
         </span>{" "}
