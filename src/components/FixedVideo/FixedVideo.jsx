@@ -15,6 +15,8 @@ const FixedVideo = () => {
 
   const handlePlayVideo = () => {
     setIsVideoPlaying(true);
+
+    ////
     setShowModal(false);
     videoRef.current.play(); // Start playing the video
     enterFullscreen();
