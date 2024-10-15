@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="custom-container flex justify-between items-center p-4 py-8 text-base md:text-lg bg-baseColor text-white">
+    <nav className="custom-container flex justify-between items-center p-4 py-2 text-base md:text-lg bg-baseColor text-white">
       <div className="text-xl font-bold flex items-center">
         <a href="/" className="flex  items-center">
         <img src={bjpLogo} alt='bjp logo' title='bjp logo' className='h-16 w-16'/>

@@ -1,3 +1,5 @@
+import facebookIcon from "../../../public/svg/fb.svg";
+import instaIcon from "../../../public/svg/insta.svg";
 const RasoiNotepad = () => {
     return (
       <div className="custom-container flex flex-col justify-center bg-yellow-50 border border-gray-300 rounded-lg p-6 max-w-lg mx-auto shadow-lg text-base md:text-2xl">
@@ -16,6 +18,10 @@ const RasoiNotepad = () => {
         <p className="text-gray-600">
           नीलकंठ मैदान महर्षि वाल्मीकि गली, गोला गोकर्णनाथ (खीरी)-262802
         </p>
+        <div className="flex gap-2 items-center">
+          <div><a href="https://www.facebook.com/profile.php?id=61561308777247&mibextid=ZbWKwL" target="_blank" rel="noreferrer"><img className="h-10 w-10 cursor-pointer" src={facebookIcon} alt="icon socialmedia"/></a></div>
+          <div><a href="https://www.instagram.com/maaannapurnarasoigola?igsh=MW9qN2JjeHVtbDIxZw==" target="_blank" rel="noreferrer"><img className="h-8 w-8 cursor-pointer" src={instaIcon} alt="icon socialmedia"/></a></div>
+        </div>
       </div>
     );
   };

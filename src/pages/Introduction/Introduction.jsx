@@ -2,6 +2,7 @@ import ContactCard from "../../components/ContactCard/ContactCard";
 import Footer from "../../components/Footer/Footer";
 import IntroHero from "../../components/IntroductionHero/IntroHero";
 import Navbar from "../../components/Navbar/Navbar";
+import PersonalNotepad from "../../components/Notepad/PersonalNotepad";
 import { TimelineMovement } from "../../components/Timeline/MovementTimeline";
 import { TimelinePolitical } from "../../components/Timeline/Timeline";
 
@@ -12,6 +13,7 @@ const Introduction = () => {
         <Navbar />
       </div>
       <IntroHero />
+      <PersonalNotepad />
       <TimelinePolitical />
       <TimelineMovement />
       <ContactCard />

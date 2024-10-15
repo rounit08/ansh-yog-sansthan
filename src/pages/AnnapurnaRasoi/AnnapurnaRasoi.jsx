@@ -1,7 +1,7 @@
 import Footer from "../../components/Footer/Footer"
 import Navbar from "../../components/Navbar/Navbar"
 import RasoiNotepad from "../../components/Notepad/RasoiNotepad"
-import RasoiImage from "../../../public/images/rasoi rasoi.jpg"
+import MaaAnnapurnaRasoiLogo from "../../../public/images/MaaAnnapurnaRasoi.jpg";
 
 const AnnapurnaRasoi = () => {
     return (
@@ -9,8 +9,8 @@ const AnnapurnaRasoi = () => {
            <div className="bg-baseColor">
             <Navbar />
            </div>
-           <div className="flex flex-wrap">
-            <img src={RasoiImage} alt="rasoi image" title="rasoi image" className="h-screen object-contain w-screen custom-container" />
+           <div className="flex flex-wrap flex-col">
+            <img src={MaaAnnapurnaRasoiLogo} alt="rasoi image" title="rasoi image" className="h-[500px] object-contain w-[500px] custom-container" />
             <RasoiNotepad />
             </div>
             <div className="bg-black">

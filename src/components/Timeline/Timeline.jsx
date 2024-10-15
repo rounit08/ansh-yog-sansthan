@@ -18,7 +18,7 @@ export function TimelinePolitical() {
       content: (
         <div>
           <p className="text-neutral-800  text-sm md:text-3xl font-normal mb-8">
-            खिल भारतीय विद्यार्थी परिषद पब्लिक इण्टर कॉलेज इकाई का मत्री बना
+          अखिल भारतीय विद्यार्थी परिषद पब्लिक इण्टर कॉलेज इकाई का मत्री बना
           </p>
         </div>
       ),
@@ -199,7 +199,7 @@ export function TimelinePolitical() {
       ),
     },
     {
-      title: "",
+      title: "2023",
       content: (
         <div>
           <p className="text-neutral-800  text-sm md:text-3xl font-normal mb-4">

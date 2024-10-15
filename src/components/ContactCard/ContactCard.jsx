@@ -3,7 +3,7 @@ import PhoneIcon from "../../../public/svg/phone.svg";
 
 const   ContactCard = () => {
   return (
-    <div className="custom-container  w-[75%] lg:w-[20%] border-2 mb-6 border-baseColor flex flex-col gap-6 p-10 rounded-lg">
+    <div className="custom-container w-fit  border-2 mb-6 border-baseColor flex flex-col gap-6 p-10 rounded-lg">
       <div className="text-baseColor  font-semibold text-lg md:text-3xl">
         संपर्क
       </div>

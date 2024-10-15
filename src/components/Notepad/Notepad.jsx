@@ -1,7 +1,11 @@
 
+import facebookIcon from "../../../public/svg/fb.svg";
+import nagarPalikeLogo from "../../../public/images/NagarPalikaGola.jpg";
+
 const Notepad = () => {
     return (
         <div className="custom-container bg-yellow-50 border border-gray-300 rounded-lg p-6 max-w-lg mx-auto shadow-lg">
+<img src={nagarPalikeLogo} alt="Nagar Palika Logo" className="h-[200px] w-[200px] mb-4"/>
             <h1 className="text-2xl font-bold text-gray-700 mb-4">आपकी सेवा, हमारा कर्तव्य</h1>
             <p className="text-gray-600 mb-4">
                 भूतनाथ भगवान भोले नाथ के आशीर्वाद, अग्रजों, माताओं, बहनों, शुभचिंतकों के असीमित सहयोग व शुभकामनाओं की शक्ति से 
@@ -72,6 +76,8 @@ const Notepad = () => {
             </ul>
             <p className="text-gray-600">- विजय शुक्ल &apos;रिंकू&apos;</p>
             <p className="text-gray-600">अध्यक्ष, नगर पालिका परिषद गोला गोकर्णनाथ (खीरी)</p>
+
+            <div><a href="https://www.facebook.com/nppgolakheri?mibextid=ZbWKwL" target="_blank" rel="noreferrer"><img className="h-10 w-10 cursor-pointer" src={facebookIcon} alt="icon socialmedia" /></a></div>
         </div>
     );
 };

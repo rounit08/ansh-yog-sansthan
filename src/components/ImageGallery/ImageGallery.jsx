@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import "./ImageGallery.css";
 import image1 from "../../../public/images/galleryImages/image1.jpg";
 import image2 from "../../../public/images/galleryImages/image2.jpg";
@@ -176,14 +176,18 @@ const images = [
   image86,
 ];
 
+
 const ImageGallery = () => {
   const [spotlightIndex, setSpotlightIndex] = useState(0);
+  const [manualNavigation, setManualNavigation] = useState(false);
   const thumbnailRefs = useRef([]);
 
   const handleNext = () => {
     setSpotlightIndex((prevIndex) => {
       const newIndex = prevIndex === images.length - 1 ? 0 : prevIndex + 1;
-      scrollToThumbnail(newIndex);
+      if (manualNavigation) {
+        scrollToThumbnail(newIndex);
+      }
       return newIndex;
     });
   };
@@ -191,7 +195,9 @@ const ImageGallery = () => {
   const handlePrev = () => {
     setSpotlightIndex((prevIndex) => {
       const newIndex = prevIndex === 0 ? images.length - 1 : prevIndex - 1;
-      scrollToThumbnail(newIndex);
+      if (manualNavigation) {
+        scrollToThumbnail(newIndex);
+      }
       return newIndex;
     });
   };
@@ -207,20 +213,28 @@ const ImageGallery = () => {
 
   const handleThumbnailClick = (index) => {
     setSpotlightIndex(index);
+    setManualNavigation(true); // User manually navigated
     scrollToThumbnail(index);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, []);
 
   return (
     <>
       <div className="custom-container h-1 relative bottom-0 bg-baseColor">
-        
         <p className="absolute text-base md:text-xl font-serif bg-baseColor rounded-b-xl font-medium text-white px-10 py-5 ">
           Image Gallery
         </p>
       </div>
 
       <div className="custom-container mt-20 flex flex-col md:flex-row items-center p-4">
-        <div className="relative  mb-4">
+        <div className="relative mb-4">
           <button
             className="h-10 w-10 absolute left-[-20px] top-[50%] z-10 p-2 text-white bg-black rounded-full focus:outline-none"
             onClick={handlePrev}
@@ -240,7 +254,7 @@ const ImageGallery = () => {
           </button>
         </div>
 
-        <div className=" gallery hidden md:flex   md:flex-col items-center gap-3 w-[120px] max-h-[500px] overflow-y-scroll space-x-2">
+        <div className="gallery hidden md:flex md:flex-col items-center gap-3 w-[120px] max-h-[500px] overflow-y-scroll space-x-2">
           {images.map((image, index) => (
             <div
               key={index}
@@ -256,15 +270,19 @@ const ImageGallery = () => {
             </div>
           ))}
         </div>
-        <div className="quote-box bg-baseColor text-white font-bold p-20 m-2 rounded-full text-center text-xl md:text-4xl">
-          <p className="italic"> &apos;एक राष्ट्र, एक राज्य, एक कानून।&apos;</p>
+        <div className="quote-box ml-2 bg-baseColor text-white font-bold w-[500px] p-10 rounded-lg text-center text-lg md:text-2xl">
+          <p className="italic"> &apos;प्रथम सेवक के रुप में मैं गोला गोकर्णनाथ के सर्वांगीण विकास के लिए निरंतर प्रतिबद्ध एवं कार्यरत हूँ, मुझे इस सम्बंध में विभिन्न सुझाव व प्रतिक्रिया भी मिलती रहती हैं इसलिए मैं आप सभी को भी आमंत्रित करता हूँ की मेरे साथ मेरी वेबसाइट एवं विभिन्न सोशल मीडिया एकाउंट से जुड़ें व गोला नगर की विकास यात्रा को सशक्त व सफल बनाने में भागीदार बनें। जय हिन्द!&apos;</p>
           <span className="text-sm md:text-lg">
-            - डॉ. श्यामा प्रसाद मुखर्जी
+            - विजय शुक्ला रिंकू
+            <br />
+            (अध्यक्ष, नगर पालिका परिषद, गोला गोकर्णनाथ)
           </span>
         </div>
       </div>
     </>
   );
 };
+
+
 
 export default ImageGallery;

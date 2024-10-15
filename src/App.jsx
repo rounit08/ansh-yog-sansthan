@@ -13,6 +13,9 @@ import image4 from "../public/images/image4.jpg"
 import image5 from "../public/images/image5.jpg"
 import image6 from "../public/images/image6.jpg"
 import image9 from "../public/images/image65.jpg"
+import image10 from "../public/images/1.png"
+import image11 from "../public/images/2.png"
+import image12 from "../public/images/3.png"
 function App() {
  
 
@@ -20,6 +23,9 @@ const images = [
 image6,
   image1,
   image9,
+  image10,
+  image11,
+  image12,
   image2,
   image3,
   image4, image5

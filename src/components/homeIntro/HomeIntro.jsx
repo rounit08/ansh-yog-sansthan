@@ -28,7 +28,7 @@ const HomeIntro = () => {
         जिम्मेदारी निभाई है। <strong className="text-baseColor">रिंकू जी का समर्पण और संघर्ष</strong>{" "}
         उन्हें न केवल एक सफल नेता बनाता है, बल्कि समाज के हर वर्ग के लिए एक
         प्रेरणा का स्रोत भी है।
-        <a href="/introduction" className="flex items-center gap-2 text-xs md:text-sm italic">अधिक जानें
+        <a href="/introduction" className="flex items-center gap-2 text-xs md:text-sm italic bg-baseColor text-white font-semibold w-fit p-3">अधिक जानें
         <img  src={linkArrow} alt="link arrow" className="h-4 w-4 aspect-square"     style={{ transform: 'rotate(-20deg)' }} 
         />
          </a>

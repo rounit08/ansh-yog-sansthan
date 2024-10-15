@@ -4,6 +4,7 @@ import video from "../../../public/videos/video.mp4";
 const FixedVideo = () => {
   const [showModal, setShowModal] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [showVideo, setShowVideo] = useState(true);
   const videoRef = useRef(null);
 
   const handleScroll = () => {
@@ -34,18 +35,6 @@ const FixedVideo = () => {
     }
   };
 
-  const exitFullscreen = () => {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    } else if (document.webkitExitFullscreen) {
-      // Safari
-      document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) {
-      // IE11
-      document.msExitFullscreen();
-    }
-    setIsVideoPlaying(false); // Reset playing state
-  };
 
   const handleCloseModal = () => {
     setShowModal(false);
@@ -59,7 +48,8 @@ const FixedVideo = () => {
   }, []);
 
   return (
-    <div className="fixed z-10 top-[63vh] right-20 h-[200px] w-[300px] bg-baseColor rounded-2xl p-2">
+     <>
+      {showVideo &&     <div className="fixed z-10 top-[63vh] right-20 h-[200px] w-[300px] bg-baseColor rounded-2xl p-2">
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-4 rounded shadow-md">
@@ -83,23 +73,18 @@ const FixedVideo = () => {
           </div>
         </div>
       )}
-      <div className="relative h-full w-full">
-        <video
-          ref={videoRef}
-          src={video}
-          controls
-          className="h-full w-full object-cover rounded-xl"
-        />
-        {isVideoPlaying && (
-          <button
-            onClick={exitFullscreen}
-            className="absolute top-4 right-4 p-2 bg-red-500 text-white rounded-full"
-          >
-            Close
-          </button>
-        )}
-      </div>
-    </div>
+       <div className="relative h-full w-full">
+       <video
+         ref={videoRef}
+         src={video}
+         controls
+         className="h-full w-full object-cover rounded-xl"
+       />
+      <div onClick={() => setShowVideo(false)} className="absolute  top-0 right-2 cursor-pointer text-2xl text-white font-semibold">x</div>
+     </div>
+     
+    </div>}
+     </>
   );
 };
 
