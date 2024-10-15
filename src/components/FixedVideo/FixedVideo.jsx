@@ -49,7 +49,7 @@ const FixedVideo = () => {
 
   return (
      <>
-      {showVideo &&     <div className="fixed z-10 top-[63vh] right-20 h-[200px] w-[300px] bg-baseColor rounded-2xl p-2">
+      {showVideo &&     <div className="fixed hidden md:block z-10 top-[63vh] right-20 h-[200px] w-[300px] bg-baseColor rounded-2xl p-2">
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-4 rounded shadow-md">
