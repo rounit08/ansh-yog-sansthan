@@ -46,10 +46,7 @@ image6,
         <PressRelease />
         <FixedVideo />
         <EightResolution />
-        <div className="bg-gray-100">
-        <SocialPages />
-
-        </div>
+        
       <div className="bg-baseColor">
         <Footer />
       </div>
