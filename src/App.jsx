@@ -39,13 +39,14 @@ image6,
       <ImageSlider images={images} />
       {/* <SparkleSection /> */}
       <HomeIntro />
+ <EightResolution />
       <div className="bg-gray-100">
       <ImageGallery />
 
       </div>
         <PressRelease />
         <FixedVideo />
-        <EightResolution />
+       
         
       <div className="bg-baseColor">
         <Footer />
