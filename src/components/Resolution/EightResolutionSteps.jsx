@@ -343,6 +343,7 @@ const EightResolutionSteps = () => {
 
               {step === 4 && (
                 <div className="space-y-4">
+<div className='text-base md:text-lg'>विशेष आग्रह: महिलाओं/युवतियों से निवेदन है की वे अष्ट संकल्प प्रतिज्ञा लेते वक्त शब्द के अन्त में करुँगी/अपनाऊँगी आदि का प्रयोग करें।</div>
                   {resolutionsList.map((resolution, index) => (
                     <div key={index} className="flex  items-center space-x-2">
                       <input
