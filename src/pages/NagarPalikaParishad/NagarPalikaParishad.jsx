@@ -9,9 +9,9 @@ const NagarPalikaParishad = () => {
                 <Navbar />
 
             </div>
-            <img src={NagarPalika} alt="nagar palika gola" className="object-cover  h-fit md:h-screen w-screen" title="nagar palika gola"/>
+            <img src={NagarPalika} alt="nagar palika gola" className="object-cover  h-fit  w-screen" title="nagar palika gola"/>
             <Notepad />
-            <div className="bg-black">
+            <div className="bg-baseColor">
             <Footer />
 
             </div>

@@ -13,7 +13,7 @@ const AnnapurnaRasoi = () => {
             <img src={MaaAnnapurnaRasoiLogo} alt="rasoi image" title="rasoi image" className="h-[500px] object-contain w-[500px] custom-container" />
             <RasoiNotepad />
             </div>
-            <div className="bg-black">
+            <div className="bg-baseColor">
                 <Footer />
             </div>
         </div>

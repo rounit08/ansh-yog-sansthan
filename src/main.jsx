@@ -12,6 +12,8 @@ import NagarPalikaParishad from './pages/NagarPalikaParishad/NagarPalikaParishad
 import AnnapurnaRasoi from './pages/AnnapurnaRasoi/AnnapurnaRasoi.jsx'
 import Gaushala from './pages/Gaushala/Gaushala.jsx'
 import Gola from './pages/Gola/Gola.jsx'
+import EightResolutionSteps from './components/Resolution/EightResolutionSteps.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,11 @@ const router = createBrowserRouter([
   {
     path: '/golagokarnath',
     element: <Gola />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/eight-resolution',
+    element: <EightResolutionSteps />,
     errorElement: <ErrorPage />
   }
 ])

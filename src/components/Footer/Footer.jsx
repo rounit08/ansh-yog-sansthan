@@ -9,18 +9,18 @@ import linkArrow from "../../../public/svg/right-arrow-link.svg";
 
 const Footer = () => {
   return (
-    <footer className="custom-container relative flex flex-col  p-10 lg:py-20 text-white bg-gradient-to-r from-black via-gray-800 to-black">
+    <footer className="custom-container relative flex flex-col  p-10 lg:py-20 text-white bg-baseColor">
       {/* Left Side */}
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
         <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
           <h3 className="text-xl font-semibold mb-4">पता:</h3>
           <div className="text-base leading-relaxed flex flex-col gap-10">
             <div>
-              <p>मो० कुम्हारन टोला</p>
+              <p>मोहल्ला कुम्हारन टोला</p>
               <p>गोला गोकर्णनाथ (खीरी), उत्तर प्रदेश-262802</p>
             </div>
             <div>
-              <p>नगर पालिका परिषद लखीमपुर रोड,</p>
+              <p>नगर पालिका परिषद, लखीमपुर रोड,</p>
               <p>गोला गोकर्णनाथ (खीरी), उत्तर प्रदेश-262802</p>
             </div>
           </div>
@@ -109,7 +109,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-3 font-sans italic text-base md:text-xl">
             <a
-              className="flex gap-2 items-center"
+              className="flex gap-2 items-center border-2 border-white rounded-xl text-sm md:text-base text-sm md:text-base p-2"
               href="https://bjpsadasyata.narendramodi.in/"
               target="_blank"
             >
@@ -122,7 +122,7 @@ const Footer = () => {
               />
             </a>
             <a
-              className="flex gap-2 items-center"
+              className="flex gap-2 items-center border-2 border-white rounded-xl text-sm md:text-base text-sm md:text-base p-2"
               href=" https://kumbh.gov.in/"
               target="_blank"
             >
@@ -135,7 +135,7 @@ const Footer = () => {
               />
             </a>
             <a
-              className="flex gap-2 items-center"
+              className="flex gap-2 items-center border-2 border-white rounded-xl text-sm md:text-base text-sm md:text-base p-2"
               href="https://bharatkeveer.gov.in/viewMartyrsGalleryPage"
               target="_blank"
             >
@@ -148,7 +148,7 @@ const Footer = () => {
               />
             </a>
             <a
-              className="flex gap-2 items-center"
+              className="flex gap-2 items-center border-2 border-white rounded-xl text-sm md:text-base text-sm md:text-base p-2"
               href="https://kheri.nic.in/ "
               target="_blank"
             >
@@ -161,7 +161,7 @@ const Footer = () => {
               />
             </a>
             <a
-              className="flex gap-2 items-center"
+              className="flex gap-2 items-center border-2 border-white rounded-xl text-sm md:text-base text-sm md:text-base p-2"
               href="https://golatourism.com/"
               target="_blank"
             >
@@ -176,7 +176,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-gray-500 text-center mt-10 flex flex-col gap-5">
+      <div className="text-white text-center mt-10 flex flex-col gap-2">
         <hr />
         Copyright Vijay Shukla Rinku BJP - 2024
         <br />

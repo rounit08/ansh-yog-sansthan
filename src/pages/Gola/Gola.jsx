@@ -16,7 +16,7 @@ const Gola = () => {
             <div className="bg-baseColor"><Navbar /></div>
             <ImageSlider images={images}/>
             <GolaNotepad />
-            <div className="bg-black"><Footer /></div>
+            <div className="bg-baseColor"><Footer /></div>
         </div>
     )
 }

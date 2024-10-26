@@ -21,7 +21,7 @@ const Gaushala = () => {
 <Navbar />
             </div>
             <ImageSlider images={images} />
-            <div className="bg-black">
+            <div className="bg-baseColor">
                 <Footer />
             </div>
         </div>

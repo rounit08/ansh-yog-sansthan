@@ -17,7 +17,7 @@ const Introduction = () => {
       <TimelinePolitical />
       <TimelineMovement />
       <ContactCard />
-      <div className="bg-black">
+      <div className="bg-baseColor">
         <Footer />
       </div>
     </div>

@@ -7,7 +7,7 @@ export function TimelinePolitical() {
       content: (
         <div>
           <p className="text-neutral-800  text-sm md:text-3xl font-normal mb-8">
-            अखिल भारतीय विद्यार्थी परिषद का सदस्य बना और राष्ट्रीय स्वयसेवक संघ
+            अखिल भारतीय विद्यार्थी परिषद का सदस्य बना और राष्ट्रीय स्वयंसेवक संघ
             से जुड़ा।{" "}
           </p>
         </div>
