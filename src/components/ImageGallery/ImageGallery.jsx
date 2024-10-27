@@ -266,11 +266,11 @@ const ImageGallery = () => {
                 src={image}
                 alt={`Thumbnail ${index}`}
                 className="w-20 h-20 object-cover rounded-lg"
-              />
+            />
             </div>
           ))}
         </div>
-        <div className="quote-box ml-2 bg-baseColor text-white font-bold w-[500px] p-10 rounded-lg text-center text-lg md:text-2xl">
+        <div className="quote-box ml-2 w-auto bg-baseColor text-white font-bold md:w-[500px] p-10 rounded-lg text-center text-lg md:text-2xl">
           <p className="italic"> &apos;प्रथम सेवक के रुप में मैं गोला गोकर्णनाथ के सर्वांगीण विकास के लिए निरंतर प्रतिबद्ध एवं कार्यरत हूँ, मुझे इस सम्बंध में विभिन्न सुझाव व प्रतिक्रिया भी मिलती रहती हैं इसलिए मैं आप सभी को भी आमंत्रित करता हूँ की मेरे साथ मेरी वेबसाइट एवं विभिन्न सोशल मीडिया एकाउंट से जुड़ें व गोला नगर की विकास यात्रा को सशक्त व सफल बनाने में भागीदार बनें। जय हिन्द!&apos;</p>
           <span className="text-sm md:text-lg">
             - विजय कुमार शुक्ल &apos;रिंकू&apos;
