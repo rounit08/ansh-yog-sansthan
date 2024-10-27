@@ -26,6 +26,9 @@ const Navbar = () => {
         <a href="/introduction" className="hover:underline cursor-pointer font-semibold">
           परिचय
         </a>
+        <a href="/eight-resolution" className="hover:underline cursor-pointer font-semibold">
+        अष्ट संकल्प
+        </a>
         <a href="/nagarpalika-gola" className="hover:underline cursor-pointer font-semibold">
           नगर पालिका परिषद
         </a>

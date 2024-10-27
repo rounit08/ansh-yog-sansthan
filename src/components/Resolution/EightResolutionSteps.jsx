@@ -356,8 +356,11 @@ const EightResolutionSteps = () => {
                       <label className="text-sm md:text-lg italic font-mono">
                         {resolution}
                       </label>
+                      
                     </div>
                   ))}
+                  <div className="text-base md:text-lg">    मैंने उपरोक्त आठों संकल्पों को ध्यानपूर्वक पढ़ा है। उसके उपरांत मैं यह चिन्हित कर रहा हूँ।
+                  </div>
                 </div>
               )}
 
