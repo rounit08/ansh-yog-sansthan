@@ -1,4 +1,4 @@
-import heroImage from "../../../public/images/AnshYogaSansthan/yoga.pngs";
+import heroImage from "../../../public/images/AnshYogaSansthan/yoga.png";
 const HomeIntro = () => {
   return (
     <div className="custom-container flex flex-col-reverse md:flex-row items-center  gap-20 p-20">
