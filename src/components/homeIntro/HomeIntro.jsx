@@ -1,5 +1,4 @@
-import heroImage from "../../../public/images/heroImage.jpg";
-import linkArrow from "../../../public/images/rightArrow.png"
+import heroImage from "../../../public/images/AnshYogaSansthan/yoga.pngs";
 const HomeIntro = () => {
   return (
     <div className="custom-container flex flex-col-reverse md:flex-row items-center  gap-20 p-20">
@@ -8,30 +7,51 @@ const HomeIntro = () => {
       </div>
       <div className="md:w-2/3 text-xl md:text-2xl">
         <span className="text-baseColor">
-          <strong>विजय कुमार शुक्ल &apos;रिंकू&apos; (एडवोकेट)</strong>
+          <strong>योग: शारीरिक, मानसिक और आत्मिक संतुलन का रहस्य</strong>
         </span>{" "}
-        एक समर्पित नेता हैं, जिन्होंने समाज सेवा और राजनीति में अपनी अनूठी पहचान
-        बनाई है।
+        <br />
+        "योग केवल व्यायाम नहीं, बल्कि जीवन जीने की कला है। यह प्राचीन भारतीय
+        परंपरा का हिस्सा है, जो शरीर, मन और आत्मा के बीच सामंजस्य स्थापित करती
+        है। योग के नियमित अभ्यास से न केवल शारीरिक स्वास्थ्य बल्कि मानसिक शांति
+        और आत्मिक जागरूकता भी प्राप्त होती है।
         <br />
         <br />
-        <strong className="text-baseColor">
-          नगर पालिका परिषद, गोला गोकर्णनाथ के अध्यक्ष
-        </strong>{" "}
-        के रूप में, उन्होंने स्थानीय विकास की नई राहें खोली हैं।{" "}
-        <strong className="text-baseColor">भाजपा के जिला उपाध्यक्ष</strong> के
-        रूप में उनकी सक्रियता ने पार्टी को मजबूती प्रदान की है।{" "}
-        <strong className="text-baseColor">प्रदेश कोषाध्यक्ष, स्थानीय निकाय परिषद</strong> के रूप में,
-        उन्होंने वित्तीय पारदर्शिता और विकास के प्रति अपनी प्रतिबद्धता को साबित
-        किया है। <strong className="text-baseColor">माँ अन्नपूर्णा रसोई सेवा समिति के अध्यक्ष</strong> के
-        रूप में, उन्होंने भूख मिटाने की दिशा में महत्वपूर्ण कदम उठाए हैं, जबकि{" "}
-        <strong className="text-baseColor">गौशाला के मंत्री</strong> के रूप में गौ माता के प्रति अपनी
-        जिम्मेदारी निभाई है। <strong className="text-baseColor">रिंकू जी का समर्पण और संघर्ष</strong>{" "}
-        उन्हें न केवल एक सफल नेता बनाता है, बल्कि समाज के हर वर्ग के लिए एक
-        प्रेरणा का स्रोत भी है।
-        <a href="/introduction" className="flex items-center gap-2 text-xs md:text-sm italic bg-baseColor text-white font-semibold w-fit p-3">अधिक जानें
-        <img  src={linkArrow} alt="link arrow" className="h-4 w-4 aspect-square"     style={{ transform: 'rotate(-20deg)' }} 
-        />
-         </a>
+        <ul>
+          {" "}
+          <strong className="text-baseColor">योग के लाभ: </strong>
+        </ul>
+        <li>
+          शारीरिक स्वास्थ्य: योग मांसपेशियों को मजबूती और लचीलापन प्रदान करता
+          है।{" "}
+        </li>{" "}
+        <li>
+          मानसिक शांति: ध्यान और प्राणायाम तनाव को कम कर मन को शांत करते हैं।
+        </li>
+        <li>
+          आध्यात्मिक जागरूकता: योग आत्मा से जुड़ने और जीवन में संतुलन लाने का
+          साधन है।
+        </li>
+        <li>
+          {" "}
+          रोगों की रोकथाम: योग उच्च रक्तचाप, मधुमेह और हृदय रोग जैसी बीमारियों
+          से बचाव करता है।
+        </li>
+        <ul>
+          <strong className="text-baseColor">योग आसन और उनके फायदे</strong>
+        </ul>
+        <li>
+          ताड़ासन : शरीर की मुद्रा को सही करता है और रीढ़ को मजबूत बनाता है।
+        </li>{" "}
+        <li>
+          भुजंगासन : पीठ के दर्द को कम करता है और रीढ़ की हड्डी को लचीला बनाता
+          है।
+        </li>
+        <li> बालासन : मन को शांत करता है और थकान को दूर करता है।</li>
+        <li>
+          {" "}
+          वृक्षासन : संतुलन में सुधार करता है और एकाग्रता बढ़ाता है।
+        </li>{" "}
+        <li> सूर्य नमस्कार : पूरे शरीर को सक्रिय और ऊर्जावान बनाता है।</li>
       </div>
     </div>
   );
